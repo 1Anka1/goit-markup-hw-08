@@ -1,0 +1,59 @@
+.hero{
+    // max-width: 1600px;
+    // height: 600px;
+    // margin-right: auto;
+    // margin-left: auto;
+    background-image: linear-gradient(to right, var(--hero-gradient-color), var(--hero-gradient-color)), url('../img/bg-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--background-color);
+    font-family: var(--primary-font-family);
+
+    @media screen and (min-width:480px) {
+        padding-top: 118px;
+        padding-bottom: 118px;
+    }
+    // padding-top: 200px;
+    // padding-bottom: 200px;
+}
+.hero-title{
+    color:var(--white-text-color);
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+
+    // width: 696px;
+    // margin: 0px auto;
+    margin-bottom: 30px;
+    // font-size: 44px;
+    // line-height: 1.5;
+   
+    @media screen and (min-width:480px) {
+        font-size: 26px;
+        line-height: 1.62;
+    }
+}
+.hero-button{
+    display: block;
+    margin: 0 auto;
+    padding: 10px 32px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    background-color: var(--accent-color);
+    color:var(--white-text-color);
+    border:0;
+    border-radius: 4px;
+    cursor: pointer;
+
+    transition: background-color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus{
+    background-color: var(--accent-button-color);
+}
+}
+

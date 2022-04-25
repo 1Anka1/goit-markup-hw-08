@@ -1,0 +1,23 @@
+.title{
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;    
+  color: var(--white-text-color);
+  margin-bottom: 20px;
+  text-align: center;
+  }
+  
+.title-theme-dark {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+   
+    @media screen and (min-width:1600px) {
+      margin-bottom: 50px;
+    }
+  }

@@ -1,0 +1,36 @@
+.footer-second{
+    @media screen and (min-width:1600px) {
+        margin-left: 72px;
+    }
+}
+.footer-social-icon-list{
+    display: flex;
+
+    & li:not(:last-child) {
+        margin-right: 10px;
+    }
+    }
+
+.footer-social-icon-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--second-backgrounf-color);
+
+    transition: background-color 250ms var(--timing-function); 
+
+    &:hover,
+    &:focus{
+    background-color: var(--accent-color);
+}
+    @media screen and (min-width:480px) {
+        margin-bottom: 60px;
+    }
+}
+
+.footer-social{
+    fill: var(--white-text-color);
+}

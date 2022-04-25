@@ -1,0 +1,62 @@
+.footer-form{
+    margin-left: auto;
+}
+.footer-form-sing-up{
+    display: flex;
+
+    @media screen and (min-width:480px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.footer-contact-form-input{
+    padding: 15px 16px;
+    width: 450px;
+    margin-right: 12px;
+    color: var(--white-text-color);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: var(--background-color);
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    &::placeholder{
+        color:rgba(255, 255, 255, 0.6);
+    }
+    @media screen and (min-width:480px) {
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width:1600px) {
+        min-width: 385px;
+    }
+}
+
+.sign-up-icon {
+    margin-left: 10px;
+  }
+.footer-contact-form-submit-btn{
+    // display: flex;
+    // align-items: center;
+    // text-align: center;
+   
+    padding: 10px 32px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    background-color: var(--accent-color);
+    color:var(--white-text-color);
+    border:0;
+    border-radius: 4px;
+    cursor: pointer;
+    
+    transition: background-color 250ms var(--timing-function);
+
+        &::before{
+        background-image: url('../img/icon-check.svg');
+    }
+        &:hover,
+        &:focus{
+            background-color: var(--accent-button-color);
+    }
+}
