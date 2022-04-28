@@ -21,9 +21,11 @@ ol {
   margin-bottom: 0;
   padding-left: 0;
 }
-// img {
-//   display: block;
-// }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 address {
   font-style: normal;
 }
@@ -34,4 +36,15 @@ address {
 
 .link {
   text-decoration: none;
+}
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width:1200px){
+  .section {
+      padding-top: 94px;
+      padding-bottom: 94px;
+  }
 }

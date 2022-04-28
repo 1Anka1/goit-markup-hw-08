@@ -10,9 +10,9 @@
 }
 .clients-list{
     display: flex;
-    flex-wrap: wrap;
-
-    @media screen and (min-width:480px) {
+   
+    @media screen and (max-width:480px) {
+        flex-wrap: wrap;
         margin: -15px;
     }
 }
@@ -24,6 +24,7 @@
         height: 92px;
     }
     @media screen and (min-width:768px) {
+        flex-basis: calc((100% - 3 * 30px) / 3);
         width: 210;
         height: 92px;
     }
