@@ -110,26 +110,15 @@
         font-size: 18px;
         line-height: 1.122;
         letter-spacing: 0.02em;
-
         color: var(--accent-color);
     }
     .mobile-menu_social-item{
-        position: relative;
-        padding-right: 10px;
+        &:not(:last-child){
+            border-right: 1px solid rgba(33, 33, 33, 0.2);
+            padding-right: 10px;
     }
-    .mobile-menu_social-item:not(:last-child){
-
-        &::after{
-        display: block;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        
-        width: 10px;
-        height: 100%;
-
-        content: "";
-        background-color: rgba(33, 33, 33, 0.2);
+        &:not(:first-child){
+            padding-left: 10px;
         }
     }
 }
