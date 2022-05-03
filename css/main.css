@@ -941,10 +941,6 @@ address {
   border-radius: 0px 0px 4px 4px;
 }
 
-.employees-card:not(:last-child) {
-  margin-bottom: 30px;
-}
-
 .employees-name {
   margin-bottom: 10px;
   font-weight: 500;
@@ -973,26 +969,60 @@ address {
   align-items: center;
   width: 44px;
   height: 44px;
-  border-radius: 50%;
-  transition: background-color 250ms var(--timing-function);
 }
 
-.social-icon-link:hover, .social-icon-link:focus {
-  background-color: var(--accent-color);
+.social-icon {
+  fill: var(--icon-color);
 }
 
 .social-icon-item:not(:last-child) {
   margin-right: 10px;
 }
 
-.social-icon {
-  fill: var(--icon-color);
-  transition: fill 250ms var(--timing-function);
+@media screen and (max-width: 767px) {
+  .employees-card:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
-.social-icon-link:hover .social-icon,
-.social-icon-link:focus .social-icon {
-  fill: var(--white-text-color);
+@media screen and (min-width: 768px) {
+  .employees {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .employees-card {
+    flex-basis: calc((100% - 2*30px) / 2);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .employees-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .employees-card {
+    flex-basis: calc((100% - 120px) / 4);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  .social-icon {
+    transition: fill 250ms var(--timing-function);
+  }
+  .social-icon-link:hover .social-icon,
+  .social-icon-link:focus .social-icon {
+    fill: var(--white-text-color);
+  }
+  .social-icon-link {
+    border-radius: 50%;
+    transition: background-color 250ms var(--timing-function);
+  }
+  .social-icon-link:hover, .social-icon-link:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .clients {
