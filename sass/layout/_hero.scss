@@ -4,7 +4,7 @@
     margin-left: auto;
     padding-top: 118px;
     padding-bottom: 118px;
-    background-image: linear-gradient(to right, var(--hero-gradient-color), var(--hero-gradient-color)), url('/img/mobile/header-img.jpg');
+    background-image: linear-gradient(to right, var(--hero-gradient-color), var(--hero-gradient-color)), url('../img/header-mobile.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -20,16 +20,15 @@
         background-image: linear-gradient(to right,
             var(--hero-gradient-color),
             var(--hero-gradient-color)),
-        url('/img/mobile/header-img@2x.jpg');
+        url('../img/header-mobile.jpg@2x.jpg');
     }
 }
-
 @media screen and (min-width:768px){
     .hero{
         background-image: linear-gradient(to right, 
         var(--hero-gradient-color), 
         var(--hero-gradient-color)), 
-        url('/img/tablet/header-img.jpg');
+        url('../img/header-img-tablet.jpg');
     }
     @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -39,7 +38,7 @@
             background-image: linear-gradient(to right,
                     var(--hero-gradient-color),
                     var(--hero-gradient-color)),
-                url('/img/tablet/header-img@2x.jpg');
+                url('../img/header-img-tablet@2x.jpg');
         }
     }
 }
@@ -53,7 +52,7 @@
         background-image: linear-gradient(to right, 
         var(--hero-gradient-color), 
         var(--hero-gradient-color)), 
-        url('/img/desktop/bg-hero.jpg');
+        url('../img/bg-hero.jpg');
     }
     @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -63,18 +62,16 @@
             background-image: linear-gradient(to right,
                     var(--hero-gradient-color),
                     var(--hero-gradient-color)),
-                url('/img/desktop/bg-hero@2x.jpg');
-        }
+                url('../img/bg-hero@2x.jpg');
     }
+}
     .hero-title{
     width: 696px;
 
     font-size: 44px;
     line-height: 1.5;
+        }
     }
-}
-
-
 .hero-title{
     width: 360px;
     margin: 0px auto;
@@ -111,4 +108,3 @@
         background-color: var(--accent-button-color);
     }
 }
-
