@@ -1,18 +1,6 @@
-.footer-form{
-    margin-left: auto;
-}
-.footer-form-sing-up{
-    display: flex;
-
-    @media screen and (min-width:480px) {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
 .footer-contact-form-input{
     padding: 15px 16px;
-    width: 450px;
-    margin-right: 12px;
+
     color: var(--white-text-color);
 
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -23,23 +11,13 @@
     &::placeholder{
         color:rgba(255, 255, 255, 0.6);
     }
-    @media screen and (min-width:480px) {
-        margin-bottom: 20px;
-    }
-    @media screen and (min-width:1600px) {
-        min-width: 385px;
-    }
 }
-
-.sign-up-icon {
-    margin-left: 10px;
-  }
 .footer-contact-form-submit-btn{
     display: flex;
     align-items: center;
     text-align: center;
-   
-    padding: 10px 32px;
+    padding: 10px 29px;
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.8;
@@ -60,3 +38,44 @@
             background-color: var(--accent-button-color);
     }
 }
+.sign-up-icon {
+    margin-left: 10px;
+  }
+
+@media screen and (max-width:1199px){
+.footer-contact-form-input{
+    margin-bottom: 20px;
+    width: 100%;
+}
+.footer-contact-form-submit-btn{
+    margin-left: auto;
+    margin-right: auto;
+}
+  }
+@media screen and (min-width:768px) and (max-width:1199px){
+    .footer-form{
+    width: 100%;
+    }
+    .footer-contact-form-input{
+    width: 450px;
+    }
+}
+@media screen and (min-width:1200px){
+    .footer-form{
+        margin-left: auto;        
+    }
+    .footer-form-sing-up{
+        display: flex; 
+    }
+    .footer-contact-form-input{
+        margin-right: 12px;
+        width: 358px;
+
+        &::placeholder {
+            font-size: 16px;
+            line-height: 1.25;
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+}
+
