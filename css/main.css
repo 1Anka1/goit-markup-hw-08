@@ -1101,13 +1101,26 @@ address {
   padding: 60px 0;
 }
 
-@media screen and (max-width: 767px) {
-  .footer {
+.contact-info-list {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.contact-info-list-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-container {
     text-align: center;
   }
-  .footer-container {
-    display: flex;
-    flex-direction: column;
+  .footer-main {
+    margin-bottom: 60px;
+  }
+  .footer-second {
+    margin-bottom: 60px;
   }
 }
 
@@ -1127,15 +1140,11 @@ address {
     display: flex;
     flex-wrap: nowrap;
   }
-}
-
-.footer-main {
-  margin-bottom: 60px;
-}
-
-@media screen and (min-width: 1600px) {
-  .footer-main {
-    margin-bottom: 0;
+  .contact-info-list-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .footer-second {
+    margin-left: 72px;
   }
 }
 
@@ -1156,17 +1165,6 @@ address {
 
 .contact-info {
   font-style: normal;
-}
-
-.contact-info-list-item {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  text-align: center;
-}
-
-.contact-info-list-item:not(:last-child) {
-  margin-bottom: 8px;
 }
 
 .address-info {
