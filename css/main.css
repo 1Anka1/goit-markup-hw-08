@@ -423,6 +423,7 @@ address {
 
 .footer-social-icon-list {
   display: flex;
+  justify-content: center;
 }
 
 .footer-social-icon-list li:not(:last-child) {
@@ -452,6 +453,12 @@ address {
 
 .footer-social {
   fill: var(--white-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-social-icon-list {
+    justify-content: start;
+  }
 }
 
 .footer-form {
@@ -1091,13 +1098,31 @@ address {
   padding: 60px 0;
 }
 
-.footer-container {
-  display: flex;
+@media screen and (max-width: 767px) {
+  .footer {
+    text-align: center;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
   .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: baseline;
+    padding-left: 76px;
+    padding-right: 89px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: nowrap;
   }
 }
 
