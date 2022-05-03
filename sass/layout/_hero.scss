@@ -53,7 +53,7 @@
         background-image: linear-gradient(to right, 
         var(--hero-gradient-color), 
         var(--hero-gradient-color)), 
-        url('/img/bg-hero.jpg');
+        url('/img/desktop/bg-hero.jpg');
     }
     @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -63,7 +63,7 @@
             background-image: linear-gradient(to right,
                     var(--hero-gradient-color),
                     var(--hero-gradient-color)),
-                url('/img/bg-hero@2x.jpg');
+                url('/img/desktop/bg-hero@2x.jpg');
         }
     }
     .hero-title{

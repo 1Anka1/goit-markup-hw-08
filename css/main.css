@@ -194,16 +194,17 @@ address {
 }
 
 .title-theme-dark {
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .title-theme-dark {
+    font-size: 36px;
     margin-bottom: 50px;
   }
 }
@@ -782,13 +783,13 @@ address {
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(to right, var(--hero-gradient-color), var(--hero-gradient-color)), url("/img/bg-hero.jpg");
+    background-image: linear-gradient(to right, var(--hero-gradient-color), var(--hero-gradient-color)), url("/img/desktop/bg-hero.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, var(--hero-gradient-color), var(--hero-gradient-color)), url("/img/bg-hero@2x.jpg");
+    background-image: linear-gradient(to right, var(--hero-gradient-color), var(--hero-gradient-color)), url("/img/desktop/bg-hero@2x.jpg");
   }
 }
 
@@ -930,74 +931,34 @@ address {
 
 .employees-section {
   background: var(--background-color-icon);
-  text-align: center;
-}
-
-@media screen and (min-width: 480px) {
-  .employees-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 1600px) {
-  .employees-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .employees {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: -15px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .employees-card {
   background: var(--white-text-color);
-  text-align: center;
-  letter-spacing: 0.03em;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (min-width: 480px) {
-  .employees-card:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .employees-card {
-    margin: 15px;
-  }
-}
-
-@media screen and (min-width: 1600px) {
-  .employees-card:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-
-.employee-wrap {
-  padding-top: 30px;
-  padding-bottom: 24px;
+.employees-card:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .employees-name {
   margin-bottom: 10px;
   font-weight: 500;
+}
+
+.employee-wrap {
+  padding: 30px 20px 24px;
+  text-align: center;
   font-size: 16px;
   line-height: 1.18;
 }
 
 .employees-position {
   margin-bottom: 16px;
-  font-size: 16px;
-  line-height: 1.18;
   color: var(--second-text-color);
 }
 
