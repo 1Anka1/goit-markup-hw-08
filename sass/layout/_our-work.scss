@@ -1,9 +1,10 @@
-.section-service{
-    padding-bottom: 94px;
-
-    @media screen and (min-width:480px){
+@media screen and (max-width:1200px) {
+    .section-service{
         display: none;
     }
+}
+.section-service{
+    padding-bottom: 94px;
 }
 .work-gallery-list{
     display: flex;
