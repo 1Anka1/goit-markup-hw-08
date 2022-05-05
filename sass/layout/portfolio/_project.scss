@@ -75,11 +75,11 @@
     letter-spacing: 0.03em;
     color: var(--second-text-color);
 }
-@media screen and (max-width: 767px){
-    .project-list-item:not(:last-child) {
-        margin-bottom: 30px;
-    }
-}
+// @media screen and (max-width: 767px){
+//     .project-list-item:not(:last-child) {
+//         margin-bottom: 30px;
+//     }
+// }
 @media screen and (min-width: 768px){
     .project-list {
         display: flex;

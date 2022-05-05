@@ -2,9 +2,6 @@
     padding-bottom: 60px;
     padding-top: 60px;
 }
-.about-item:not(:last-child){
-    margin-bottom: 30px;
-}
 .wrap-about-icon{
     display: flex;
     justify-content: center;
@@ -26,6 +23,11 @@
 .about-text-item{
     line-height: 1.71;
     color: var(--second-text-color);
+}
+@media screen and (max-width: 767px){
+    .about-item:not(:last-child){
+        margin-bottom: 30px;
+    }
 }
 @media screen and (min-width:768px) {
     .about-list{
