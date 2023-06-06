@@ -1,4 +1,5 @@
 # Project
+
 «A1» The BEM methodology is used.
 
 «A2» The SASS preprocessor is used.
@@ -10,6 +11,7 @@
 «A5» The mobile menu script is linked in HTML as a separate file, mobile-menu.js.
 
 # Markup
+
 «B1» All pages in the <head> box have the viewport meta tag.
 
 «B2» All background and content raster images are responsive and support x1 and x2 pixel density.
@@ -19,6 +21,7 @@
 «B4» The mobile menu layout is done.
 
 # Styling
+
 «C1» For writing styles, the Mobile First approach and (min-width: ) media feature are used.
 
 «C2» Styles needed only in a certain range are enclosed in media queries (min-width: ) and (max-width: ) or just (max-width: ).
