@@ -1,14 +1,13 @@
-.title{
+.title {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-transform: uppercase;    
+  text-transform: uppercase;
   color: var(--white-text-color);
   margin-bottom: 20px;
-  text-align: center;
-  }
-  
+}
+
 .title-theme-dark {
   margin-bottom: 30px;
 
@@ -19,9 +18,9 @@
   letter-spacing: 0.03em;
 }
 
-@media screen and (min-width:1200px) {
-    .title-theme-dark{
-      font-size: 36px;
-      margin-bottom: 50px;
-    }
+@media screen and (min-width: 1200px) {
+  .title-theme-dark {
+    font-size: 36px;
+    margin-bottom: 50px;
   }
+}
